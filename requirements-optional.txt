@@ -1,0 +1,9 @@
+# requirements-optional.txt
+# Instalar apenas se for usar as funcionalidades avançadas
+
+watchdog==3.0.0        # Monitoramento de pastas
+flask==3.0.0           # API REST
+flask-cors==4.0.0      # CORS para APIs
+sqlalchemy==2.0.23     # Banco de dados
+streamlit==1.28.1      # Interface web (futuro)
+Pillow==10.1.0         # Processamento de imagens (OCR futuro)
