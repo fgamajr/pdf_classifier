@@ -1,0 +1,37 @@
+# Configuração do Sistema de Classificação de Documentos
+
+# Caminhos
+paths:
+  data_train: "data/train"
+  data_test: "data/test"
+  data_production: "data/production"
+  models: "models"
+  logs: "logs"
+
+# Modelos
+models:
+  spacy_model: "pt_core_news_sm"
+  classifier_type: "naive_bayes"  # naive_bayes, svm, random_forest
+  vectorizer_max_features: 5000
+  min_df: 2
+  max_df: 0.95
+
+# Processamento de texto
+text_processing:
+  min_text_length: 50
+  max_text_length: 10000
+  remove_numbers: true
+  remove_special_chars: true
+  lemmatize: true
+
+# Classes de documentos
+document_classes:
+  - "diplomas"
+  - "comprovantes_renda"
+  - "comprovantes_endereco"
+  - "outros"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

@@ -1,0 +1,16 @@
+NOTA FISCAL ELETRÔNICA
+Série 001 - Número 123456
+
+EMITENTE: Loja de Eletrônicos XYZ
+CNPJ: 99.888.777/0001-66
+
+DESTINATÁRIO: José da Silva
+CPF: 111.222.333-44
+
+DESCRIÇÃO DOS PRODUTOS:
+- Smartphone Android - Qtd: 1 - Valor: R$ 899,00
+- Película protetora - Qtd: 1 - Valor: R$ 25,00
+
+TOTAL: R$ 924,00
+
+Data de emissão: 20/02/2024

@@ -1,0 +1,18 @@
+CONTA DE LUZ - ELETROPAULO
+
+CLIENTE: Pedro Santos Silva
+CPF: 987.654.321-00
+
+ENDEREÇO DE INSTALAÇÃO:
+Rua das Flores, 123 - Apartamento 45
+Bairro: Vila Nova
+CEP: 01234-567
+São Paulo - SP
+
+CONSUMO: 150 kWh
+VALOR: R$ 89,50
+
+VENCIMENTO: 25/03/2024
+
+Este documento serve como comprovante de residência
+no endereço acima mencionado.

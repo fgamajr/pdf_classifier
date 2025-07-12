@@ -1,0 +1,276 @@
+# ============================================
+# .gitignore para Projeto de Classificação de Documentos
+# ============================================
+
+# ============================================
+# Python
+# ============================================
+# Ambiente virtual
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribuição / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ============================================
+# Dados Sensíveis e Modelos Treinados
+# ============================================
+# Modelos treinados (podem ser grandes e sensíveis)
+models/
+*.pkl
+*.joblib
+*.bin
+*.model
+
+# Dados de treinamento/teste (podem conter informações sensíveis)
+data/train/**/*.pdf
+data/test/**/*.pdf
+data/production/**/*.pdf
+
+# Manter estrutura de pastas mas ignorar PDFs
+!data/train/*/
+!data/test/*/
+!data/production/*/
+
+# Arquivos de exemplo (manter apenas .txt)
+!data/train/*/*.txt
+!data/test/*/*.txt
+
+# ============================================
+# Logs e Relatórios
+# ============================================
+logs/
+*.log
+*.log.*
+log/
+
+# Relatórios específicos (podem conter dados sensíveis)
+training_report.json
+test_results.json
+classification_results.json
+
+# Arquivos de saída temporários
+output/
+results/
+temp_results/
+
+# ============================================
+# IDEs e Editores
+# ============================================
+# VS Code
+.vscode/
+.history/
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ============================================
+# Sistema Operacional
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# Arquivos de Configuração Local
+# ============================================
+# Configurações locais (podem conter paths específicos)
+config/local_config.yaml
+config/production_config.yaml
+.env
+.env.local
+.env.production
+
+# Chaves e certificados
+*.key
+*.pem
+*.crt
+*.p12
+secrets/
+
+# ============================================
+# Arquivos Temporários
+# ============================================
+# Arquivos temporários gerais
+*.tmp
+*.temp
+*.bak
+*.backup
+*_backup
+*.orig
+*.rej
+
+# Cache de bibliotecas
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================
+# Documentação Gerada
+# ============================================
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# ============================================
+# Específico do Projeto
+# ============================================
+# Checkpoints de treinamento
+checkpoints/
+experiments/
+
+# Dados processados/transformados
+processed_data/
+extracted_texts/
+features/
+
+# Benchmarks e análises
+benchmarks/
+analysis/
+profiling/
+
+# Scripts de deploy temporários
+deploy_temp/
+*.deploy
+
+# Arquivos de configuração de máquina específica
+machine_config.yaml
+local_paths.yaml
+
+# ============================================
+# Arquivos de Backup Automático
+# ============================================
+*_backup_*
+backup_*/
+*.backup.*
+
+# ============================================
+# Outros
+# ============================================
+# Arquivos compactados (se não forem releases)
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# Arquivos de lock (específicos de ambiente)
+Pipfile.lock
+poetry.lock
+
+# Node.js (caso use ferramentas JS futuramente)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

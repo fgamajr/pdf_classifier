@@ -1,0 +1,17 @@
+EXTRATO BANCÁRIO
+
+BANCO DO BRASIL - Agência 1234-5
+CONTA CORRENTE: 98765-4
+
+TITULAR: Carlos Eduardo Silva
+CPF: 123.987.456-00
+
+PERÍODO: 01/03/2024 a 31/03/2024
+
+MOVIMENTAÇÃO:
+01/03 - Saldo anterior: R$ 2.500,00
+05/03 - Depósito: R$ 1.000,00
+10/03 - Saque: R$ 300,00
+15/03 - Transferência: R$ -800,00
+
+SALDO ATUAL: R$ 2.400,00

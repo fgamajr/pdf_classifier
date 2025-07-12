@@ -1,0 +1,39 @@
+PRÓXIMOS PASSOS PARA USO DO SISTEMA
+===================================
+
+1. PREPARAR DADOS DE TREINAMENTO
+   - Coloque PDFs de diplomas em: data/train/diplomas/
+   - Coloque PDFs de comprovantes de renda em: data/train/comprovantes_renda/
+   - Coloque PDFs de comprovantes de endereço em: data/train/comprovantes_endereco/
+   - 🎯 IMPORTANTE: Coloque outros tipos de documentos em: data/train/outros/
+     (contratos, notas fiscais, receitas médicas, certidões, etc.)
+   - Recomendado: 10-50 documentos por categoria
+
+2. ATIVAR AMBIENTE
+   source venv/bin/activate
+
+3. TREINAR MODELO
+   ./run_training.sh
+   
+4. TESTAR MODELO
+   ./run_testing.sh
+
+5. USAR EM PRODUÇÃO
+   ./run_classifier.sh /caminho/para/documento.pdf
+
+DICAS:
+- Verifique logs em logs/ para diagnósticos
+- Edite config/config.yaml para ajustar parâmetros
+- Use documentos com texto extraível (não imagens)
+- Mais documentos de treino = melhor acurácia
+- 🎯 A categoria "outros" é CRUCIAL - inclua documentos variados!
+
+SOBRE A CATEGORIA "OUTROS":
+- Evita classificações incorretas de documentos fora do escopo
+- Inclua: contratos, notas fiscais, receitas, certidões, etc.
+- O sistema pode rejeitar automaticamente documentos classificados como "outros"
+
+COMANDOS ÚTEIS:
+- Ver ajuda: cd src/modules && python classifier.py --help
+- Classificar múltiplos: python classifier.py --directory /pasta/
+- Salvar resultados: python classifier.py --file doc.pdf --output resultado.json

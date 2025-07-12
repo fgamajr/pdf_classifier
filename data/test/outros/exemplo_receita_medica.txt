@@ -1,0 +1,16 @@
+RECEITA MÉDICA
+
+Dr. Carlos Medicina
+CRM: 123456-SP
+
+PACIENTE: Maria Santos
+Data: 15/03/2024
+
+MEDICAMENTOS PRESCRITOS:
+- Paracetamol 500mg - 1 comprimido a cada 8 horas
+- Vitamina D 2000UI - 1 cápsula ao dia
+
+Validade da receita: 30 dias
+
+________________________________
+Assinatura e carimbo do médico
